@@ -1,0 +1,38 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Dominick Reilly
+    - name: Email
+      value: dreilly1@uncc.edu
+    # - name: Date of Birth
+    #   value: 14th March 1879
+    # - name: Languages
+    #   value: English, German
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Computer Science
+      institution: University of North Carolina at Charlotte
+      year: 2021 - Present
+    - title: Bachelor of Science in Computer Science
+      institution: University of North Carolina at Charlotte
+      year: 2019 - 2021
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Research Assistant - Computer Vision Lab
+      institution: University of North Carolina at Charlotte
+      year: 2022 - Present
+      description:
+        - Using vision transformers to understand activities of daily living videos.
+        - Developed strategies for learning pose-aware representations in vision transformers using RGB and pose modalities.
+    - title: Research Assistant - Data Privacy Lab
+      institution: University of North Carolina at Charlotte
+      year: 2021 - 2022
+      description:
+        - Designed image obfuscation mechanisms satisfying differential privacy.
+        - Created a webpage demonstrating differentially private image obfuscation.
+        - This work was published at IEEE TPS 2021 and as a demo at EDBT 2022 (http://3.223.148.187/).

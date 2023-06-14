@@ -1,0 +1,62 @@
+---
+---
+
+@string{aps = {American Physical Society,}}
+
+InProceedings{reilly2023poseinpixels,
+  author = {Dominick Reilly and Aman Chadha and Srijan Das},
+  booktitle = {arXiv},
+  title = {Seeing the Pose in the Pixels: Learning Pose-Aware Representations in Vision Transformers},
+  abstract = "Human perception of surroundings is often guided by the various poses present within the environment. Many computer vision tasks, such as human action recognition and robot imitation learning, rely on pose-based entities like human skeletons or robotic arms. However, conventional Vision Transformer (ViT) models uniformly process all patches, neglecting valuable pose priors in input videos. We argue that incorporating poses into RGB data is advantageous for learning fine-grained and viewpoint-agnostic representations. Consequently, we introduce two strategies for learning pose-aware representations in ViTs. The first method, called Pose-aware Attention Block (PAAB), is a plug-and-play ViT block that performs localized attention on pose regions within videos. The second method, dubbed Pose-Aware Auxiliary Task (PAAT), presents an auxiliary pose prediction task optimized jointly with the primary ViT task. Although their functionalities differ, both methods succeed in learning pose-aware representations, enhancing performance in multiple diverse downstream tasks. Our experiments, conducted across seven datasets, reveal the efficacy of both pose-aware methods on three video analysis tasks, with PAAT holding a slight edge over PAAB. Both PAAT and PAAB surpass their respective backbone Transformers by up to 9.8% in real-world action recognition and 21.8% in multi-view robotic video alignment.",
+  year = {2023},
+  volume = {},
+  number = {},
+  pages = {},
+  doi = {},
+  selected = {true},
+  preview = "poseinpixels.png",
+}
+
+InProceedings{das2023smalldatavit,
+  author = {Srijan Das and Tanmay Jain and Dominick Reilly and Soumyajit Karmakar and Shyam Marjit and Xiang Li and Michael Ryoo},
+  booktitle = {arXiv},
+  title = {From Few to More: Enhancing ViT Performance on Limited Data},
+  abstract = "Vision Transformers (ViTs) have become ubiquitous in computer vision. Despite their success, ViTs lack inductive biases, which can make it difficult to train them with limited data. To address this challenge, prior studies suggest training ViTs with self-supervised learning (SSL) and fine-tuning sequentially. However, we observe that jointly optimizing ViTs for the primary task and a Self-Supervised Auxiliary Task (SSAT) is surprisingly beneficial when the amount of training data is limited. We explore the appropriate SSL tasks that can be optimized alongside the primary task, the training schemes for these tasks, and the data scale at which they can be most effective. Our findings reveal that SSAT is a powerful technique that enables ViTs to leverage the unique characteristics of both the self-supervised and primary tasks, achieving better performance than typical ViTs pre-training with SSL and fine-tuning sequentially. Our experiments, conducted on 10 datasets, demonstrate that SSAT significantly improves ViT performance while reducing carbon footprint.",
+  year = {2023},
+  volume = {},
+  number = {},
+  pages = {},
+  doi = {},
+  selected = {true},
+  preview = "smalldatavit.png"
+}
+
+@InProceedings{saleem2022dpshield,
+  author = {Saleem, Muhammad Usama and Reilly, Dominick and Fan, Liyue},
+  booktitle = {International Conference on Extending Database Technology (EDBT)},
+  title = {DP-Shield: Face Obfuscation with Differential Privacy},
+  abstract = "An immense amount of image data is captured and shared nowadays, e.g., social media and surveillance databases.  Such image data may contain sensitive information, such as faces, which can be misused if in the hands of an adversary. Widely used image privacy solutions obfuscate faces, e.g., via pixelization and blurring, before sharing with untrusted parties.  However, they do not provide quantifiable privacy guarantees and are prone to inference attacks. In this demo, we present DP-Shield, an interactive framework for face image obfuscation under the rigorous notion of differential privacy. DP-Shield showcases our recently proposed obfuscation methods, namely DP-Pix and DP-SVD, and also includes two alternative methods for comparison.  The audience will be able to learn about existing DP methods by interacting with them using real-world face image datasets.  Furthermore, DP-Shield integrates widely used image quality measures and practical privacy risk measures (i.e., face recognition) to illustrate the efficacy of our methods.",
+  year = {2022},
+  volume = {},
+  number = {},
+  pages = {},
+  doi = {},
+  selected = {true},
+  preview = "DPSHIELD.png",
+  website = "http://3.223.148.187/",
+  pdf = "https://openproceedings.org/2022/conf/edbt/paper-150.pdf",
+}
+
+@InProceedings{reilly2021comparative,
+  author={Reilly, Dominick and Fan, Liyue},
+  booktitle={IEEE International Conference on Trust, Privacy and Security in Intelligent Systems and Applications (TPS-ISA)}, 
+  title={A Comparative Evaluation of Differentially Private Image Obfuscation},
+  abstract = "Image data may contain sensitive information, such as face and iris, which can be misused if in the hands of an adversary.  As image data is continuously being collected and shared, it is imperative to ensure the privacy of image data.  Widely used image obfuscation methods apply blurring or pixelization to those sensitive regions.  However, they are prone to inference attacks, and do not provide quantifiable privacy guarantees.   Recently, several obfuscation approaches have been proposed to satisfy the rigorous notion of differential privacy. The goal of this work is to provide a comparative evaluation of those previously proposed approaches in the context of obfuscating face and iris images.  We synthesize existing differentially private obfuscation methods and analyze their privacy guarantees.  Furthermore, we conduct an extensive empirical evaluation regarding practical utility and privacy protection, with real-world face and iris image datasets.  We find that DP-SVD outperforms other methods on several privacy and utility measures. Moreover, we provide an in-depth discussion of our results and point to several considerations when applying those differentially private image obfuscation methods.",
+  year={2021},
+  volume={},
+  number={},
+  pages={80-89},
+  doi={10.1109/TPSISA52974.2021.00009},
+  selected={true},
+  preview="comparative.png",
+  pdf = "https://ieeexplore.ieee.org/document/9750228"}
