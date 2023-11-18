@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our demo paper titled "DP-Shield: Face Obfuscation with Differential Privacy" was accepted at EDBT!
+Our demo paper titled "DP-Shield: Face Obfuscation with Differential Privacy" is accepted at EDBT!

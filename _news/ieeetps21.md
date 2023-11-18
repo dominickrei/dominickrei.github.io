@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper titled "A Comparative Evaluation for Differentially Private Image Obfuscation" was accepted at IEEE TPS!
+Our paper titled "A Comparative Evaluation for Differentially Private Image Obfuscation" is accepted at IEEE TPS!

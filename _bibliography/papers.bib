@@ -3,6 +3,22 @@
 
 @string{aps = {American Physical Society,}}
 
+@InProceedings{das2024limited-data-vit,
+  author = {Srijan Das and Tanmay Jain and Dominick Reilly and Pranav Balaji and Soumyajit Karmakar and Shyam Marjit and Xiang Li and Abhijit Das and Michael Ryoo},
+  booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  title = {Limited Data, Unlimited Potential: A Study on ViTs Augmented by Masked Autoencoders},
+  abstract = "Vision Transformers (ViTs) have become ubiquitous in computer vision. Despite their success, ViTs lack inductive biases, which can make it difficult to train them with limited data. To address this challenge, prior studies suggest training ViTs with self-supervised learning (SSL) and fine-tuning sequentially. However, we observe that jointly optimizing ViTs for the primary task and a Self-Supervised Auxiliary Task (SSAT) is surprisingly beneficial when the amount of training data is limited. We explore the appropriate SSL tasks that can be optimized alongside the primary task, the training schemes for these tasks, and the data scale at which they can be most effective. Our findings reveal that SSAT is a powerful technique that enables ViTs to leverage the unique characteristics of both the self-supervised and primary tasks, achieving better performance than typical ViTs pre-training with SSL and fine-tuning sequentially. Our experiments, conducted on 10 datasets, demonstrate that SSAT significantly improves ViT performance while reducing carbon footprint. We also confirm the effectiveness of SSAT in the video domain for deepfake detection, showcasing its generalizability.",
+  year = {2024},
+  volume = {},
+  number = {},
+  pages = {},
+  doi = {},
+  selected = {true},
+  preview = "smalldatavit.png",
+  code = "https://github.com/dominickrei/Limited-data-vits",
+  arxiv = "2310.20704",
+}
+
 @InProceedings{reilly2023poseinpixels,
   author = {Dominick Reilly and Aman Chadha and Srijan Das},
   booktitle = {arXiv},
