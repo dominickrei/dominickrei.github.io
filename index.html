@@ -203,6 +203,76 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 preview">
+<img id="pivitpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/pivit.png"><div id="pivitpng-modal" class="modal2">
+            <span class="closeimg" onclick="document.getElementById('pivitpng-modal').style.display='none'">×</span>
+            <div class="myCaption"></div>
+            <img class="modal-content2" id="pivitpng-modal-img">
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("pivitpng-modal");
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('pivitpng');
+            var modalImg = document.getElementById("pivitpng-modal-img");
+            var captionText = modal.getElementsByTagName('div')[0];
+            img.onclick = function () {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = "";
+            }
+            // Get the <span> element that closes the modal
+            var span = modal.getElementsByTagName('span')[0];
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+              modal.style.display = "none";
+            }
+            modal.onclick = function () {
+              modal.style.display = "none";
+            }
+          </script>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="reilly2024pivit" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Just Add π! Pose Induced Video Transformers for Understanding Activities of Daily Living</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Dominick Reilly</em>, and Srijan Das</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In arXiv</em>, 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2311.18840" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="https://github.com/dominickrei/pi-vit" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Video transformers have become the de facto standard for human action recognition, yet their exclusive reliance on the RGB modality still limits their adoption in certain domains. One such domain is Activities of Daily Living (ADL), where RGB alone is not sufficient to distinguish between visually similar actions, or actions observed from multiple viewpoints. To facilitate the adoption of video transformers for ADL, we hypothesize that the augmentation of RGB with human pose information, known for its sensitivity to fine-grained motion and multiple viewpoints, is essential. Consequently, we introduce the first Pose Induced Video Transformer: PI-ViT (or π-ViT), a novel approach that augments the RGB representations learned by video transformers with 2D and 3D pose information. The key elements of π-ViT are two plug-in modules, 2D Skeleton Induction Module and 3D Skeleton Induction Module, that are responsible for inducing 2D and 3D pose information into the RGB representations. These modules operate by performing pose-aware auxiliary tasks, a design choice that allows π-ViT to discard the modules during inference. Notably, π-ViT achieves the state-of-the-art performance on three prominent ADL datasets, encompassing both real-world and large-scale RGB-D datasets, without requiring poses or additional computational overhead at inference.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
 <img id="smalldatavitpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/smalldatavit.png"><div id="smalldatavitpng-modal" class="modal2">
             <span class="closeimg" onclick="document.getElementById('smalldatavitpng-modal').style.display='none'">×</span>
             <div class="myCaption"></div>
@@ -278,76 +348,6 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
             <p>Vision Transformers (ViTs) have become ubiquitous in computer vision. Despite their success, ViTs lack inductive biases, which can make it difficult to train them with limited data. To address this challenge, prior studies suggest training ViTs with self-supervised learning (SSL) and fine-tuning sequentially. However, we observe that jointly optimizing ViTs for the primary task and a Self-Supervised Auxiliary Task (SSAT) is surprisingly beneficial when the amount of training data is limited. We explore the appropriate SSL tasks that can be optimized alongside the primary task, the training schemes for these tasks, and the data scale at which they can be most effective. Our findings reveal that SSAT is a powerful technique that enables ViTs to leverage the unique characteristics of both the self-supervised and primary tasks, achieving better performance than typical ViTs pre-training with SSL and fine-tuning sequentially. Our experiments, conducted on 10 datasets, demonstrate that SSAT significantly improves ViT performance while reducing carbon footprint. We also confirm the effectiveness of SSAT in the video domain for deepfake detection, showcasing its generalizability.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
-<img id="poseinpixelspng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/poseinpixels.png"><div id="poseinpixelspng-modal" class="modal2">
-            <span class="closeimg" onclick="document.getElementById('poseinpixelspng-modal').style.display='none'">×</span>
-            <div class="myCaption"></div>
-            <img class="modal-content2" id="poseinpixelspng-modal-img">
-          </div>
-          <script>
-            // Get the modal
-            var modal = document.getElementById("poseinpixelspng-modal");
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById('poseinpixelspng');
-            var modalImg = document.getElementById("poseinpixelspng-modal-img");
-            var captionText = modal.getElementsByTagName('div')[0];
-            img.onclick = function () {
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = "";
-            }
-            // Get the <span> element that closes the modal
-            var span = modal.getElementsByTagName('span')[0];
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-              modal.style.display = "none";
-            }
-            modal.onclick = function () {
-              modal.style.display = "none";
-            }
-          </script>
-</div>
-
-        <!-- Entry bib key -->
-        <div id="reilly2023poseinpixels" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">Seeing the Pose in the Pixels: Learning Pose-Aware Representations in Vision Transformers</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <em>Dominick Reilly</em>, Aman Chadha, and Srijan Das</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In arXiv</em>, 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2306.09331" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-            <a href="https://github.com/dominickrei/PoseAwareVT" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-          </div>
-          
-          <div class="badges">
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Human perception of surroundings is often guided by the various poses present within the environment. Many computer vision tasks, such as human action recognition and robot imitation learning, rely on pose-based entities like human skeletons or robotic arms. However, conventional Vision Transformer (ViT) models uniformly process all patches, neglecting valuable pose priors in input videos. We argue that incorporating poses into RGB data is advantageous for learning fine-grained and viewpoint-agnostic representations. Consequently, we introduce two strategies for learning pose-aware representations in ViTs. The first method, called Pose-aware Attention Block (PAAB), is a plug-and-play ViT block that performs localized attention on pose regions within videos. The second method, dubbed Pose-Aware Auxiliary Task (PAAT), presents an auxiliary pose prediction task optimized jointly with the primary ViT task. Although their functionalities differ, both methods succeed in learning pose-aware representations, enhancing performance in multiple diverse downstream tasks. Our experiments, conducted across seven datasets, reveal the efficacy of both pose-aware methods on three video analysis tasks, with PAAT holding a slight edge over PAAB. Both PAAT and PAAB surpass their respective backbone Transformers by up to 9.8% in real-world action recognition and 21.8% in multi-view robotic video alignment.</p>
           </div>
         </div>
       </div>
@@ -521,7 +521,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2023 Dominick  Reilly. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
-Last updated: November 18, 2023.
+Last updated: December 01, 2023.
       </div>
     </footer>
 
