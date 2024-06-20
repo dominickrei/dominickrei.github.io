@@ -128,6 +128,89 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         <div class="col-sm-2 preview">
+<img id="llavidalpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/llavidal.png"><div id="llavidalpng-modal" class="modal2">
+            <span class="closeimg" onclick="document.getElementById('llavidalpng-modal').style.display='none'">×</span>
+            <div class="myCaption"></div>
+            <img class="modal-content2" id="llavidalpng-modal-img">
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("llavidalpng-modal");
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('llavidalpng');
+            var modalImg = document.getElementById("llavidalpng-modal-img");
+            var captionText = modal.getElementsByTagName('div')[0];
+            img.onclick = function () {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = "";
+            }
+            // Get the <span> element that closes the modal
+            var span = modal.getElementsByTagName('span')[0];
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+              modal.style.display = "none";
+            }
+            modal.onclick = function () {
+              modal.style.display = "none";
+            }
+          </script>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="chakrasinhareilly2024lavidal" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">LLAVIDAL: Benchmarking Large Language Vision Models for Daily Activities of Living</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Rajatsubhra Chakraborty*, Arkaprava Sinha*, <em>Dominick Reilly*</em>, Manish Kumar Govind, and
+          <span class="more-authors" title="click to view 3 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '3 more authors' ? 'Pu Wang, Francois Bremond, Srijan Das' : '3 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">3 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In arXiv</em>, 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2406.09390" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="https://adl-x.github.io/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Large Language Vision Models (LLVMs) have demonstrated effectiveness in processing internet videos, yet they struggle with the visually perplexing dynamics present in Activities of Daily Living (ADL) due to limited pertinent datasets and models tailored to relevant cues. To this end, we propose a framework for curating ADL multiview datasets to fine-tune LLVMs, resulting in the creation of ADL-X, comprising 100K RGB video-instruction pairs, language descriptions, 3D skeletons, and action-conditioned object trajectories. We introduce LLAVIDAL, an LLVM capable of incorporating 3D poses and relevant object trajectories to understand the intricate spatiotemporal relationships within ADLs. Furthermore, we present a novel benchmark, ADLMCQ, for quantifying LLVM effectiveness in ADL scenarios. When trained on ADL-X, LLAVIDAL consistently achieves state-of-the-art performance across all ADL evaluation metrics. Qualitative analysis reveals LLAVIDAL’s temporal reasoning capabilities in understanding ADL.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
 <img id="pivitpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/pivit.png"><div id="pivitpng-modal" class="modal2">
             <span class="closeimg" onclick="document.getElementById('pivitpng-modal').style.display='none'">×</span>
             <div class="myCaption"></div>
@@ -439,7 +522,7 @@
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2024 Dominick  Reilly. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
-Last updated: February 29, 2024.
+Last updated: June 20, 2024.
       </div>
     </footer>
 
