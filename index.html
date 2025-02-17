@@ -14,7 +14,7 @@
     <meta name="author" content="Dominick  Reilly">
     <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
-    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+    <meta name="keywords" content="dominick-reilly">
 
 
     <!-- Bootstrap & MDB -->
@@ -149,9 +149,9 @@ Write your biography here. Tell the world about yourself. Link to your favorite 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
-<p>I am a second-year PhD student at the University of North Carolina at Charlotte majoring in Computer Science. My research focuses on understanding human actions in videos, specifically daily-living actions that are observed in real-world environments. I am interested in utilizing both egocentric and third person viewpoints, as well as multiple modalities, to solve the challenges of daily-living actions. I am advised by <a href="https://srijandas07.github.io/" rel="external nofollow noopener" target="_blank">Dr. Srijan Das</a>.</p>
-
-<p>Previously, I was a member of the <a href="https://fan-group.github.io/imageprivacy/" rel="external nofollow noopener" target="_blank">Image Privacy Lab</a> under the supervision of <a href="https://webpages.charlotte.edu/lfan4/" rel="external nofollow noopener" target="_blank">Dr. Liyue Fan</a>. Our research adapted the standard notion of differential privacy to image data, with the objective of creating robust image obfuscation algorithms that offer rigorous privacy guarantees while preserving high utility.</p>
+<p>Hello, I am a third-year PhD student at the University of North Carolina at Charlotte advised by <a href="https://srijandas07.github.io/" rel="external nofollow noopener" target="_blank">Dr. Srijan Das</a>. My research focuses on multi-modal learning and video understanding, specifically for activities of daily-living observed in real-world environments.
+<!-- 
+Previously, I was a member of the [Image Privacy Lab](https://fan-group.github.io/imageprivacy/) under the supervision of [Dr. Liyue Fan](https://webpages.charlotte.edu/lfan4/). Our research adapted the standard notion of differential privacy to image data, with the objective of creating robust image obfuscation algorithms that offer rigorous privacy guarantees while preserving high utility. --></p>
 
           </div>
 
@@ -162,6 +162,24 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
               
                 
                 <tr>
+                  <th scope="row">Dec 2024</th>
+                  <td>
+                    One paper, “SKI Models: Skeleton Induced Vision-Language Embeddings for Understanding Activities of Daily Living”, is accepted to AAAI 2025!
+
+                  </td>
+                </tr>
+                
+                
+                <tr>
+                  <th scope="row">Jun 2024</th>
+                  <td>
+                    Started summer internship at <a href="https://usa.honda-ri.com/" rel="external nofollow noopener" target="_blank">Honda Research Institute</a> in San Jose, California as a student researcher!
+
+                  </td>
+                </tr>
+                
+                
+                <tr>
                   <th scope="row">Feb 2024</th>
                   <td>
                     One paper, “Just Add π! Pose Induced Video Transformers for Understanding Activities of Daily Living”, is accepted to CVPR 2024!
@@ -170,20 +188,10 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
                 </tr>
                 
                 
-                
                 <tr>
-                  <th scope="row">Oct 2023</th>
+                  <th scope="row">Feb 2024</th>
                   <td>
-                    One paper, “Limited Data, Unlimited Potential: A Study on ViTs Augmented by Masked Autoencoders”, is accepted to WACV 2024!
-
-                  </td>
-                </tr>
-                
-                
-                <tr>
-                  <th scope="row">May 2023</th>
-                  <td>
-                    I was awarded <a href="https://www.chateaubriand-fellowship.org/About-the-Fellowship" rel="external nofollow noopener" target="_blank">The Chateaubriand Fellowship</a>! Starting Feb 2024, I will spend 4 months at INRIA, Sophia Antipolis, France as a research intern with the <a href="https://team.inria.fr/stars/en/research/" rel="external nofollow noopener" target="_blank">STARS Team</a>.
+                    Started internship at INRIA, Sophia Antipolis, France as a research intern with the <a href="https://team.inria.fr/stars/en/research/" rel="external nofollow noopener" target="_blank">STARS Team</a>!
 
                   </td>
                 </tr>
@@ -200,6 +208,159 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
           <h2><a href="/publications/" style="color: inherit;">Selected publications</a></h2>
           <div class="publications">
             <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
+<img id="egoexopng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/egoexo.png"><div id="egoexopng-modal" class="modal2">
+            <span class="closeimg" onclick="document.getElementById('egoexopng-modal').style.display='none'">×</span>
+            <div class="myCaption"></div>
+            <img class="modal-content2" id="egoexopng-modal-img">
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("egoexopng-modal");
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('egoexopng');
+            var modalImg = document.getElementById("egoexopng-modal-img");
+            var captionText = modal.getElementsByTagName('div')[0];
+            img.onclick = function () {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = "";
+            }
+            // Get the <span> element that closes the modal
+            var span = modal.getElementsByTagName('span')[0];
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+              modal.style.display = "none";
+            }
+            modal.onclick = function () {
+              modal.style.display = "none";
+            }
+          </script>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="reilly2025egoexo" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">From My View to Yours: Ego-Augmented Learning in Large Vision Language Models for Understanding Exocentric Daily Living Activities</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Dominick Reilly</em>, Manish Kumar Govind, and Srijan Das</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In arXiv</em>, 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2501.05711" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="https://github.com/dominickrei/EgoExo4ADL" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Large Vision Language Models (LVLMs) have demonstrated impressive capabilities in video understanding, yet their adoption for Activities of Daily Living (ADL) remains limited by their inability to capture fine-grained interactions and spatial relationships. This limitation is particularly evident in ADL tasks, where understanding detailed human-object interaction and human-centric motion is crucial for applications such as elderly monitoring and cognitive assessment. To address this, we aim to leverage the complementary nature of egocentric views to enhance LVLM’s understanding of exocentric ADL videos. Consequently, we propose an online ego2exo distillation approach to learn ego-augmented exo representations in LVLMs. While effective, this approach requires paired ego-exo training data, which is impractical to collect for real-world ADL scenarios. Consequently, we develop EgoMimic, a skeleton-guided method that can generate mimicked ego views from exocentric videos. We find that the exo representations of our ego-augmented LVLMs successfully learn to extract ego-perspective cues, demonstrated through comprehensive evaluation on six ADL benchmarks and our proposed EgoPerceptionMCQ benchmark designed specifically to assess egocentric understanding from exocentric videos. Code, models, and data will be open-sourced.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
+<img id="ski_modelspng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/ski_models.png"><div id="ski_modelspng-modal" class="modal2">
+            <span class="closeimg" onclick="document.getElementById('ski_modelspng-modal').style.display='none'">×</span>
+            <div class="myCaption"></div>
+            <img class="modal-content2" id="ski_modelspng-modal-img">
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("ski_modelspng-modal");
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('ski_modelspng');
+            var modalImg = document.getElementById("ski_modelspng-modal-img");
+            var captionText = modal.getElementsByTagName('div')[0];
+            img.onclick = function () {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = "";
+            }
+            // Get the <span> element that closes the modal
+            var span = modal.getElementsByTagName('span')[0];
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+              modal.style.display = "none";
+            }
+            modal.onclick = function () {
+              modal.style.display = "none";
+            }
+          </script>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="reilly2025egoexp" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">SKI Models: Skeleton Induced Vision-Language Embeddings for Understanding Activities of Daily Living</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        Arkaprava Sinha, <em>Dominick Reilly</em>, Francois Bremond, Pu Wang, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Srijan Das' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In AAAI</em>, 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2502.03459" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a href="https://github.com/thearkaprava/SKI-Models" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>The introduction of vision-language models like CLIP has enabled the development of foundational video models capable of generalizing to unseen videos and human actions. However, these models are typically trained on web videos, which often fail to capture the challenges present in Activities of Daily Living (ADL) videos. Existing works address ADL-specific challenges, such as similar appearances, subtle motion patterns, and multiple viewpoints, by combining 3D skeletons and RGB videos. However, these approaches are not integrated with language, limiting their ability to generalize to unseen action classes. In this paper, we introduce SKI models, which integrate 3D skeletons into the vision-language embedding space. SKI models leverage a skeleton-language model, SkeletonCLIP, to infuse skeleton information into Vision Language Models (VLMs) and Large Vision Language Models (LVLMs) through collaborative training. Notably, SKI models do not require skeleton data during inference, enhancing their robustness for real-world applications. The effectiveness of SKI models is validated on three popular ADL datasets for zero-shot action recognition and video caption generation tasks.</p>
+          </div>
+        </div>
+      </div>
+</li>
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
@@ -234,18 +395,18 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 </div>
 
         <!-- Entry bib key -->
-        <div id="chakrasinhareilly2024lavidal" class="col-sm-8">
+        <div id="llavidal2024" class="col-sm-8">
         <!-- Title -->
-        <div class="title">LLAVIDAL: Benchmarking Large Language Vision Models for Daily Activities of Living</div>
+        <div class="title">LLAVIDAL: A Large LAnguage VIsion Model for Daily Activities of Living</div>
         <!-- Author -->
         <div class="author">
         
 
-        Rajatsubhra Chakraborty*, Arkaprava Sinha*, <em>Dominick Reilly*</em>, Manish Kumar Govind, and
-          <span class="more-authors" title="click to view 3 more authors" onclick="
+        <em>Dominick Reilly</em>, Rajatsubhra Chakraborty, Arkaprava Sinha, Manish Kumar Govind, and
+          <span class="more-authors" title="click to view 4 more authors" onclick="
                 var element = $(this);
                 element.attr('title', '');
-                var more_authors_text = element.text() == '3 more authors' ? 'Pu Wang, Francois Bremond, Srijan Das' : '3 more authors';
+                var more_authors_text = element.text() == '4 more authors' ? 'Pu Wang, Francois Bremond, Le Xue, Srijan Das' : '4 more authors';
                 var cursorPosition = 0;
                 var textAdder = setInterval(function(){
                   element.text(more_authors_text.substring(0, cursorPosition + 1));
@@ -253,7 +414,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
                     clearInterval(textAdder);
                   }
               }, '10');
-              ">3 more authors</span>
+              ">4 more authors</span>
 </div>
 
         <!-- Journal/Book title and date -->
@@ -278,7 +439,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>Large Language Vision Models (LLVMs) have demonstrated effectiveness in processing internet videos, yet they struggle with the visually perplexing dynamics present in Activities of Daily Living (ADL) due to limited pertinent datasets and models tailored to relevant cues. To this end, we propose a framework for curating ADL multiview datasets to fine-tune LLVMs, resulting in the creation of ADL-X, comprising 100K RGB video-instruction pairs, language descriptions, 3D skeletons, and action-conditioned object trajectories. We introduce LLAVIDAL, an LLVM capable of incorporating 3D poses and relevant object trajectories to understand the intricate spatiotemporal relationships within ADLs. Furthermore, we present a novel benchmark, ADLMCQ, for quantifying LLVM effectiveness in ADL scenarios. When trained on ADL-X, LLAVIDAL consistently achieves state-of-the-art performance across all ADL evaluation metrics. Qualitative analysis reveals LLAVIDAL’s temporal reasoning capabilities in understanding ADL.</p>
+            <p>Current Large Language Vision Models (LLVMs) trained on web videos perform well in general video understanding but struggle with fine-grained details, complex human-object interactions (HOI), and view-invariant representation learning essential for Activities of Daily Living (ADL). This limitation stems from a lack of specialized ADL video instruction-tuning datasets and insufficient modality integration to capture discriminative action representations. To address this, we propose a semi-automated framework for curating ADL datasets, creating ADL-X, a multiview, multimodal RGBS instruction-tuning dataset. Additionally, we introduce LLAVIDAL, an LLVM integrating videos, 3D skeletons, and HOIs to model ADL’s complex spatiotemporal relationships. For training LLAVIDAL a simple joint alignment of all modalities yields suboptimal results; thus, we propose a Multimodal Progressive (MMPro) training strategy, incorporating modalities in stages following a curriculum. We also establish ADL MCQ and video description benchmarks to assess LLVM performance in ADL tasks. Trained on ADL-X, LLAVIDAL achieves state-of-the-art performance across ADL benchmarks. Code and data will be made publicly available.</p>
           </div>
         </div>
       </div>
@@ -330,7 +491,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
         
         
         <div class="periodical">
-          <em>In IEEE/CVF Conference on Computer Vision and Pattern Recognition Conference (CVPR)</em>, 2024
+          <em>In CVPR</em>, 2024
         </div>
         <div class="periodical">
           
@@ -413,7 +574,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
         
         
         <div class="periodical">
-          <em>In IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</em>, 2024
+          <em>In WACV</em>, 2024
         </div>
         <div class="periodical">
           
@@ -464,8 +625,8 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2024 Dominick  Reilly. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
-Last updated: June 20, 2024.
+        © Copyright 2025 Dominick  Reilly. Built using <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
+Last updated: February 17, 2025.
       </div>
     </footer>
 
