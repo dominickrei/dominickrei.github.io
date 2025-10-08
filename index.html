@@ -149,7 +149,7 @@ Write your biography here. Tell the world about yourself. Link to your favorite 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
-<p>Hello, I am a third-year PhD student at the University of North Carolina at Charlotte advised by <a href="https://srijandas07.github.io/" rel="external nofollow noopener" target="_blank">Dr. Srijan Das</a>. My research focuses on multi-modal learning and video understanding, specifically for activities of daily-living observed in real-world environments.
+<p>Hello, I am a fourth-year PhD student in Computer Science at the University of North Carolina at Charlotte advised by <a href="https://srijandas07.github.io/" rel="external nofollow noopener" target="_blank">Dr. Srijan Das</a>, and am a member of the <a href="https://charlotteml.github.io/" rel="external nofollow noopener" target="_blank">Charlotte Machine Learning Lab (CharMLab)</a>. My current focus is on multi-modal learning in Vision Language Models (VLMs) for video understanding and robotic control. I have worked on tasks including ego-exo viewpoint transfer, cross-modal domain adaptation, and fine-grained action understanding. I am interested in developing simple methods that are generalizable and scalable.
 <!-- 
 Previously, I was a member of the [Image Privacy Lab](https://fan-group.github.io/imageprivacy/) under the supervision of [Dr. Liyue Fan](https://webpages.charlotte.edu/lfan4/). Our research adapted the standard notion of differential privacy to image data, with the objective of creating robust image obfuscation algorithms that offer rigorous privacy guarantees while preserving high utility. --></p>
 
@@ -208,6 +208,76 @@ Previously, I was a member of the [Image Privacy Lab](https://fan-group.github.i
           <h2><a href="/publications/" style="color: inherit;">Selected publications</a></h2>
           <div class="publications">
             <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
+<img id="viscoppng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/viscop.png"><div id="viscoppng-modal" class="modal2">
+            <span class="closeimg" onclick="document.getElementById('viscoppng-modal').style.display='none'">×</span>
+            <div class="myCaption"></div>
+            <img class="modal-content2" id="viscoppng-modal-img">
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("viscoppng-modal");
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('viscoppng');
+            var modalImg = document.getElementById("viscoppng-modal-img");
+            var captionText = modal.getElementsByTagName('div')[0];
+            img.onclick = function () {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = "";
+            }
+            // Get the <span> element that closes the modal
+            var span = modal.getElementsByTagName('span')[0];
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+              modal.style.display = "none";
+            }
+            modal.onclick = function () {
+              modal.style.display = "none";
+            }
+          </script>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="reilly2025viscop" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">VisCoP: Visual Probing for Video Domain Adaptation of Vision Language Models</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Dominick Reilly</em>, Manish Kumar Govind, Le Xue, and Srijan Das</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em></em> Preprint 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="/assets/pdf/ViSCoP_preprint.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="https://github.com/dominickrei/ViSCoP" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Large Vision Language Models (VLMs) excel at general visual reasoning tasks, but their performance degrades sharply when deployed in novel domains with substantial distribution shifts compared to what was seen during pretraining. Existing approaches to adapt VLMs to novel target domains rely on finetuning standard VLM components. Depending on which components are finetuned, these approaches either limit the VLM’s ability to learn domain-specific features or lead to catastrophic forgetting of pre-existing capabilities. To address this, we introduce Vision Contextualized Probing (VisCoP), which augments the VLM’s vision encoder with a compact set of learnable visual probes, enabling domain-specific features to be learned with only minimal updates to the pretrained VLM components. We evaluate VisCoP across three challenging domain adaptation scenarios: cross-view (exocentric → egocentric), cross-modal (RGB → depth), and cross-task (human understanding → robot control). Our experiments demonstrate that VisCoP consistently outperforms existing domain adaptation strategies, achieving superior performance on the target domain while better retaining capabilities from the source domain.</p>
+          </div>
+        </div>
+      </div>
+</li>
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
@@ -357,89 +427,6 @@ Previously, I was a member of the [Image Privacy Lab](https://fan-group.github.i
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
             <p>Large Vision Language Models (LVLMs) have demonstrated impressive capabilities in video understanding, yet their adoption for Activities of Daily Living (ADL) remains limited by their inability to capture fine-grained interactions and spatial relationships. This limitation is particularly evident in ADL tasks, where understanding detailed human-object interaction and human-centric motion is crucial for applications such as elderly monitoring and cognitive assessment. To address this, we aim to leverage the complementary nature of egocentric views to enhance LVLM’s understanding of exocentric ADL videos. Consequently, we propose an online ego2exo distillation approach to learn ego-augmented exo representations in LVLMs. While effective, this approach requires paired ego-exo training data, which is impractical to collect for real-world ADL scenarios. Consequently, we develop EgoMimic, a skeleton-guided method that can generate mimicked ego views from exocentric videos. We find that the exo representations of our ego-augmented LVLMs successfully learn to extract ego-perspective cues, demonstrated through comprehensive evaluation on six ADL benchmarks and our proposed EgoPerceptionMCQ benchmark designed specifically to assess egocentric understanding from exocentric videos. Code, models, and data will be open-sourced.</p>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 preview">
-<img id="ski_modelspng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/ski_models.png"><div id="ski_modelspng-modal" class="modal2">
-            <span class="closeimg" onclick="document.getElementById('ski_modelspng-modal').style.display='none'">×</span>
-            <div class="myCaption"></div>
-            <img class="modal-content2" id="ski_modelspng-modal-img">
-          </div>
-          <script>
-            // Get the modal
-            var modal = document.getElementById("ski_modelspng-modal");
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById('ski_modelspng');
-            var modalImg = document.getElementById("ski_modelspng-modal-img");
-            var captionText = modal.getElementsByTagName('div')[0];
-            img.onclick = function () {
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = "";
-            }
-            // Get the <span> element that closes the modal
-            var span = modal.getElementsByTagName('span')[0];
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-              modal.style.display = "none";
-            }
-            modal.onclick = function () {
-              modal.style.display = "none";
-            }
-          </script>
-</div>
-
-        <!-- Entry bib key -->
-        <div id="reilly2025egoexp" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">SKI Models: Skeleton Induced Vision-Language Embeddings for Understanding Activities of Daily Living</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Arkaprava Sinha, <em>Dominick Reilly</em>, Francois Bremond, Pu Wang, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'Srijan Das' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In AAAI</em>, 2025
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a href="http://arxiv.org/abs/2502.03459" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
-            <a href="https://github.com/thearkaprava/SKI-Models" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-          </div>
-          
-          <div class="badges">
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>The introduction of vision-language models like CLIP has enabled the development of foundational video models capable of generalizing to unseen videos and human actions. However, these models are typically trained on web videos, which often fail to capture the challenges present in Activities of Daily Living (ADL) videos. Existing works address ADL-specific challenges, such as similar appearances, subtle motion patterns, and multiple viewpoints, by combining 3D skeletons and RGB videos. However, these approaches are not integrated with language, limiting their ability to generalize to unseen action classes. In this paper, we introduce SKI models, which integrate 3D skeletons into the vision-language embedding space. SKI models leverage a skeleton-language model, SkeletonCLIP, to infuse skeleton information into Vision Language Models (VLMs) and Large Vision Language Models (LVLMs) through collaborative training. Notably, SKI models do not require skeleton data during inference, enhancing their robustness for real-world applications. The effectiveness of SKI models is validated on three popular ADL datasets for zero-shot action recognition and video caption generation tasks.</p>
           </div>
         </div>
       </div>
@@ -626,7 +613,7 @@ Previously, I was a member of the [Image Privacy Lab](https://fan-group.github.i
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
         © Copyright 2025 Dominick  Reilly. Built using <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
-Last updated: July 19, 2025.
+Last updated: October 08, 2025.
       </div>
     </footer>
 
@@ -748,5 +735,19 @@ Last updated: July 19, 2025.
   }
 </script>
 
+
+    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=Mo9TR7V9PlIz2-iErjb-LDX_ub8EZ5DVu6TsWAr_UB0&amp;cl=ffffff&amp;w=a"></script>
+
+    <style>
+      #mapmyvisitors-widget,
+      #mapmyvisitors-widget *,
+      .mapmyvisitors-map-control {
+        display: none !important;
+        visibility: hidden !important;
+        height: 200 !important;
+        width: 200 !important;
+        overflow: hidden !important;
+      }
+    </style>
   </body>
 </html>
