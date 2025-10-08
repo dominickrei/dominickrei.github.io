@@ -3,6 +3,21 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{reilly2025viscop,
+  author = {Dominick Reilly and Manish Kumar Govind and Le Xue and Srijan Das},
+  title = {VisCoP: Visual Probing for Video Domain Adaptation of Vision Language Models},
+  abstract = {Large Vision Language Models (VLMs) excel at general visual reasoning tasks, but their performance degrades sharply when deployed in novel domains with substantial distribution shifts compared to what was seen during pretraining. Existing approaches to adapt VLMs to novel target domains rely on finetuning standard VLM components. Depending on which components are finetuned, these approaches either limit the VLM's ability to learn domain-specific features or lead to catastrophic forgetting of pre-existing capabilities. To address this, we introduce Vision Contextualized Probing (VisCoP), which augments the VLM's vision encoder with a compact set of learnable visual probes, enabling domain-specific features to be learned with only minimal updates to the pretrained VLM components. We evaluate VisCoP across three challenging domain adaptation scenarios: cross-view (exocentric → egocentric), cross-modal (RGB → depth), and cross-task (human understanding → robot control). Our experiments demonstrate that VisCoP consistently outperforms existing domain adaptation strategies, achieving superior performance on the target domain while better retaining capabilities from the source domain.},
+  year = {Preprint 2025},
+  volume = {},
+  number = {},
+  pages = {},
+  doi = {},
+  selected = {true},
+  preview = "viscop.png",
+  code = "https://github.com/dominickrei/ViSCoP",
+  pdf = "ViSCoP_preprint.pdf"
+}
+
 @InProceedings{reilly2025llavidal,
   author = {Dominick Reilly and Rajatsubhra Chakraborty and Arkaprava Sinha and Manish Kumar Govind and Pu Wang and Francois Bremond and Le Xue and Srijan Das},
   booktitle = {CVPR},
@@ -35,7 +50,7 @@
   arxiv = "2501.05711",
 }
 
-@InProceedings{reilly2025egoexo,
+@InProceedings{reilly2025skimodels,
   author = {Arkaprava Sinha and Dominick Reilly and Francois Bremond and Pu Wang and Srijan Das},
   booktitle = {AAAI},
   title = {SKI Models: Skeleton Induced Vision-Language Embeddings for Understanding Activities of Daily Living},
@@ -45,7 +60,7 @@
   number = {},
   pages = {},
   doi = {},
-  selected = {true},
+  selected = {false},
   preview = "ski_models.png",
   code = "https://github.com/thearkaprava/SKI-Models",
   arxiv = "2502.03459",
