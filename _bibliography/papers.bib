@@ -3,7 +3,7 @@
 
 @string{aps = {American Physical Society,}}
 
-@article{reilly2025viscop,
+@InProceedings{reilly2025viscop,
   author = {Dominick Reilly and Manish Kumar Govind and Le Xue and Srijan Das},
   booktitle = {arXiv},
   title = {VisCoP: Visual Probing for Video Domain Adaptation of Vision Language Models},
@@ -17,6 +17,22 @@
   preview = "viscop.png",
   code = "https://github.com/dominickrei/ViSCoP",
   arxiv = "2510.13808"
+}
+
+@InProceedings{reilly2025egoexo,
+  author = {Dominick Reilly and Manish Kumar Govind and and Le Xue and Srijan Das},
+  booktitle = {arXiv},
+  title = {From My View to Yours: Ego-to-Exo Transfer in VLMs for Understanding Activities of Daily Living},
+  abstract = {Vision Language Models (VLMs) have achieved strong performance across diverse video understanding tasks. However, their viewpoint invariant training limits their ability to understand egocentric properties (e.g., human object interactions) from exocentric video observations. This limitation is critical for many applications, such as Activities of Daily Living (ADL) monitoring, where the understanding of egocentric properties is essential, and egocentric cameras are impractical to deploy. To address this limitation, we propose Ego2ExoVLM, a VLM that learns to infer egocentric properties from exocentric videos by leveraging time-synchronized ego-exo videos during training. Ego2ExoVLM accomplishes this through the use of two components: Ego2Exo Sequence Distillation, which transfers knowledge from an egocentric teacher to an exocentric student, and Ego Adaptive Visual Tokens, designed to enhance the effectiveness of this knowledge transfer. To measure this capability, we introduce Ego-in-Exo Perception, a benchmark of 3.9K questions curated to explicitly measure the understanding of egocentric properties from exocentric videos. Ego2ExoVLM is evaluated on 10 tasks across Ego-in-Exo Perception and existing ADL benchmarks, achieving state-of-the-art results on the ADL-X benchmark suite and outperforming strong baselines on our proposed benchmark. Code, models, and data will be open-sourced.},
+  year = {2025},
+  volume = {},
+  number = {},
+  pages = {},
+  doi = {},
+  selected = {true},
+  preview = "egoexo.png",
+  code = "https://github.com/dominickrei/EgoExo4ADL",
+  arxiv = "2501.05711",
 }
 
 @InProceedings{reilly2025llavidal,
@@ -33,22 +49,6 @@
   preview = "llavidal.png",
   code = "https://adl-x.github.io/",
   arxiv = "2406.09390",
-}
-
-@InProceedings{reilly2025egoexo,
-  author = {Dominick Reilly and Manish Kumar Govind and Srijan Das},
-  booktitle = {arXiv},
-  title = {From My View to Yours: Ego-Augmented Learning in Large Vision Language Models for Understanding Exocentric Daily Living Activities},
-  abstract = {Large Vision Language Models (LVLMs) have demonstrated impressive capabilities in video understanding, yet their adoption for Activities of Daily Living (ADL) remains limited by their inability to capture fine-grained interactions and spatial relationships. This limitation is particularly evident in ADL tasks, where understanding detailed human-object interaction and human-centric motion is crucial for applications such as elderly monitoring and cognitive assessment. To address this, we aim to leverage the complementary nature of egocentric views to enhance LVLM's understanding of exocentric ADL videos. Consequently, we propose an online ego2exo distillation approach to learn ego-augmented exo representations in LVLMs. While effective, this approach requires paired ego-exo training data, which is impractical to collect for real-world ADL scenarios. Consequently, we develop EgoMimic, a skeleton-guided method that can generate mimicked ego views from exocentric videos. We find that the exo representations of our ego-augmented LVLMs successfully learn to extract ego-perspective cues, demonstrated through comprehensive evaluation on six ADL benchmarks and our proposed EgoPerceptionMCQ benchmark designed specifically to assess egocentric understanding from exocentric videos. Code, models, and data will be open-sourced.},
-  year = {2025},
-  volume = {},
-  number = {},
-  pages = {},
-  doi = {},
-  selected = {true},
-  preview = "egoexo.png",
-  code = "https://github.com/dominickrei/EgoExo4ADL",
-  arxiv = "2501.05711",
 }
 
 @InProceedings{reilly2025skimodels,
