@@ -3,12 +3,27 @@
 
 @string{aps = {American Physical Society,}}
 
+@InProceedings{reilly2026mop,
+  author = {Dominick Reilly and Qiyu Wu and Hiromi Wakaki and Srijan Das and Yuki Mistufuji},
+  booktitle = {arXiv},
+  title = {Mixture of Probes: Learning from Privileged Modalities in Multimodal LLMs Through Probing},
+  abstract = {Multimodal Large Language Models (MLLMs) are typically designed under the assumption that all modalities available during training will also be accessible at inference. However, many real-world settings violate this assumption, requiring models to operate under a privileged modality setting, where auxiliary modalities are available only during training. While these modalities contain valuable information, existing MLLMs largely fail to leverage them effectively, as they treat modalities as interchangeable inputs rather than sources of complementary supervision. We propose Mixture of Probes (MoP), a novel framework that disentangles modality-specific and modality-general signals within the MLLM, allowing the model to preserve modality-dependent structure while learning transferable representations across modalities. At its core, MoP achieves this through a structured probing mechanism that extracts and organizes information from intermediate representations of a shared modality encoder, rather than relying only on final-layer alignment as done in existing MLLMs. To support this disentanglement, we further introduce MoP Cross-modal Training (MoP-X), a training strategy for MoP centered around a probe disentanglement loss that prevents probe collapse and encourages cross-modal learning. We evaluate MoP across two domains spanning eight tasks and four modalities under a comprehensive evaluation protocol tailored to the privileged modality setting, where each modality is independently treated as the sole input at inference time. MoP consistently outperforms strong MLLM baselines, achieving up to 65% relative improvement, demonstrating that auxiliary modalities, even when unavailable at inference, can provide substantial gains when effectively leveraged during training.},
+  year = {2026},
+  volume = {},
+  number = {},
+  pages = {},
+  doi = {},
+  selected = {true},
+  preview = "MoP.png",
+  arxiv = "2607.08839"
+}
+
 @InProceedings{reilly2025viscop,
   author = {Dominick Reilly and Manish Kumar Govind and Le Xue and Srijan Das},
-  booktitle = {arXiv},
+  booktitle = {ECCV},
   title = {VisCoP: Visual Probing for Video Domain Adaptation of Vision Language Models},
   abstract = {Large Vision Language Models (VLMs) excel at general visual reasoning tasks, but their performance degrades sharply when deployed in novel domains with substantial distribution shifts compared to what was seen during pretraining. Existing approaches to adapt VLMs to novel target domains rely on finetuning standard VLM components. Depending on which components are finetuned, these approaches either limit the VLM's ability to learn domain-specific features or lead to catastrophic forgetting of pre-existing capabilities. To address this, we introduce Vision Contextualized Probing (VisCoP), which augments the VLM's vision encoder with a compact set of learnable visual probes, enabling domain-specific features to be learned with only minimal updates to the pretrained VLM components. We evaluate VisCoP across three challenging domain adaptation scenarios: cross-view (exocentric → egocentric), cross-modal (RGB → depth), and cross-task (human understanding → robot control). Our experiments demonstrate that VisCoP consistently outperforms existing domain adaptation strategies, achieving superior performance on the target domain while better retaining capabilities from the source domain.},
-  year = {2025},
+  year = {2026},
   volume = {},
   number = {},
   pages = {},
@@ -21,10 +36,10 @@
 
 @InProceedings{reilly2025egoexo,
   author = {Dominick Reilly and Manish Kumar Govind and and Le Xue and Srijan Das},
-  booktitle = {arXiv},
-  title = {From My View to Yours: Ego-to-Exo Transfer in VLMs for Understanding Activities of Daily Living},
+  booktitle = {ECCV},
+  title = {From My View to Yours: Learning Egocentric Cues from Exocentric Video using Privileged Egocentric Supervision},
   abstract = {Vision Language Models (VLMs) have achieved strong performance across diverse video understanding tasks. However, their viewpoint invariant training limits their ability to understand egocentric properties (e.g., human object interactions) from exocentric video observations. This limitation is critical for many applications, such as Activities of Daily Living (ADL) monitoring, where the understanding of egocentric properties is essential, and egocentric cameras are impractical to deploy. To address this limitation, we propose Ego2ExoVLM, a VLM that learns to infer egocentric properties from exocentric videos by leveraging time-synchronized ego-exo videos during training. Ego2ExoVLM accomplishes this through the use of two components: Ego2Exo Sequence Distillation, which transfers knowledge from an egocentric teacher to an exocentric student, and Ego Adaptive Visual Tokens, designed to enhance the effectiveness of this knowledge transfer. To measure this capability, we introduce Ego-in-Exo Perception, a benchmark of 3.9K questions curated to explicitly measure the understanding of egocentric properties from exocentric videos. Ego2ExoVLM is evaluated on 10 tasks across Ego-in-Exo Perception and existing ADL benchmarks, achieving state-of-the-art results on the ADL-X benchmark suite and outperforming strong baselines on our proposed benchmark. Code, models, and data will be open-sourced.},
-  year = {2025},
+  year = {2026},
   volume = {},
   number = {},
   pages = {},
