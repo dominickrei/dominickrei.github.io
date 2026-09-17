@@ -162,6 +162,24 @@ Previously, I was a member of the [Image Privacy Lab](https://fan-group.github.i
               
                 
                 <tr>
+                  <th scope="row">Jun 2026</th>
+                  <td>
+                    Two papers (<a href="https://arxiv.org/abs/2510.13808" rel="external nofollow noopener" target="_blank">VisCoP</a> and <a href="https://arxiv.org/abs/2501.05711" rel="external nofollow noopener" target="_blank">Ego2ExoVLM</a>) are accepted to ECCV 2026!
+
+                  </td>
+                </tr>
+                
+                
+                <tr>
+                  <th scope="row">Jun 2026</th>
+                  <td>
+                    Started research internship at <a href="https://www.salesforce.com/ai-research/" rel="external nofollow noopener" target="_blank">Salesforce AI Research</a> working with <a href="https://www.niebles.net/" rel="external nofollow noopener" target="_blank">Juan Carlos Niebles</a>!
+
+                  </td>
+                </tr>
+                
+                
+                <tr>
                   <th scope="row">Dec 2025</th>
                   <td>
                     Started research internship at the <a href="https://sony.github.io/creativeai/" rel="external nofollow noopener" target="_blank">Sony Creative AI Lab</a> working with the Multimodal NLP Team!
@@ -187,24 +205,6 @@ Previously, I was a member of the [Image Privacy Lab](https://fan-group.github.i
                   </td>
                 </tr>
                 
-                
-                <tr>
-                  <th scope="row">Jun 2024</th>
-                  <td>
-                    Started summer internship at <a href="https://usa.honda-ri.com/" rel="external nofollow noopener" target="_blank">Honda Research Institute</a> in San Jose, California as a student researcher!
-
-                  </td>
-                </tr>
-                
-                
-                <tr>
-                  <th scope="row">Feb 2024</th>
-                  <td>
-                    One paper, “Just Add π! Pose Induced Video Transformers for Understanding Activities of Daily Living”, is accepted to CVPR 2024!
-
-                  </td>
-                </tr>
-                
               </table>
             </div>
           </div>
@@ -216,6 +216,88 @@ Previously, I was a member of the [Image Privacy Lab](https://fan-group.github.i
           <h2><a href="/publications/" style="color: inherit;">Selected publications</a></h2>
           <div class="publications">
             <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
+<img id="MoPpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/MoP.png"><div id="MoPpng-modal" class="modal2">
+            <span class="closeimg" onclick="document.getElementById('MoPpng-modal').style.display='none'">×</span>
+            <div class="myCaption"></div>
+            <img class="modal-content2" id="MoPpng-modal-img">
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("MoPpng-modal");
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('MoPpng');
+            var modalImg = document.getElementById("MoPpng-modal-img");
+            var captionText = modal.getElementsByTagName('div')[0];
+            img.onclick = function () {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = "";
+            }
+            // Get the <span> element that closes the modal
+            var span = modal.getElementsByTagName('span')[0];
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+              modal.style.display = "none";
+            }
+            modal.onclick = function () {
+              modal.style.display = "none";
+            }
+          </script>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="reilly2026mop" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Mixture of Probes: Learning from Privileged Modalities in Multimodal LLMs Through Probing</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Dominick Reilly</em>, Qiyu Wu, Hiromi Wakaki, Srijan Das, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Yuki Mistufuji' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In arXiv</em>, 2026
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2607.08839" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+          </div>
+          
+          <div class="badges">
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Multimodal Large Language Models (MLLMs) are typically designed under the assumption that all modalities available during training will also be accessible at inference. However, many real-world settings violate this assumption, requiring models to operate under a privileged modality setting, where auxiliary modalities are available only during training. While these modalities contain valuable information, existing MLLMs largely fail to leverage them effectively, as they treat modalities as interchangeable inputs rather than sources of complementary supervision. We propose Mixture of Probes (MoP), a novel framework that disentangles modality-specific and modality-general signals within the MLLM, allowing the model to preserve modality-dependent structure while learning transferable representations across modalities. At its core, MoP achieves this through a structured probing mechanism that extracts and organizes information from intermediate representations of a shared modality encoder, rather than relying only on final-layer alignment as done in existing MLLMs. To support this disentanglement, we further introduce MoP Cross-modal Training (MoP-X), a training strategy for MoP centered around a probe disentanglement loss that prevents probe collapse and encourages cross-modal learning. We evaluate MoP across two domains spanning eight tasks and four modalities under a comprehensive evaluation protocol tailored to the privileged modality setting, where each modality is independently treated as the sole input at inference time. MoP consistently outperforms strong MLLM baselines, achieving up to 65% relative improvement, demonstrating that auxiliary modalities, even when unavailable at inference, can provide substantial gains when effectively leveraged during training.</p>
+          </div>
+        </div>
+      </div>
+</li>
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
@@ -263,7 +345,7 @@ Previously, I was a member of the [Image Privacy Lab](https://fan-group.github.i
         
         
         <div class="periodical">
-          <em>In arXiv</em>, 2025
+          <em>In ECCV</em>, 2026
         </div>
         <div class="periodical">
           
@@ -322,7 +404,7 @@ Previously, I was a member of the [Image Privacy Lab](https://fan-group.github.i
         <!-- Entry bib key -->
         <div id="reilly2025egoexo" class="col-sm-8">
         <!-- Title -->
-        <div class="title">From My View to Yours: Ego-to-Exo Transfer in VLMs for Understanding Activities of Daily Living</div>
+        <div class="title">From My View to Yours: Learning Egocentric Cues from Exocentric Video using Privileged Egocentric Supervision</div>
         <!-- Author -->
         <div class="author">
         
@@ -333,7 +415,7 @@ Previously, I was a member of the [Image Privacy Lab](https://fan-group.github.i
         
         
         <div class="periodical">
-          <em>In arXiv</em>, 2025
+          <em>In ECCV</em>, 2026
         </div>
         <div class="periodical">
           
@@ -620,8 +702,8 @@ Previously, I was a member of the [Image Privacy Lab](https://fan-group.github.i
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2025 Dominick  Reilly. Built using <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
-Last updated: December 25, 2025.
+        © Copyright 2026 Dominick  Reilly. Built using <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
+Last updated: September 17, 2026.
       </div>
     </footer>
 
