@@ -6,4 +6,4 @@ related_posts: false
 display: true
 ---
 
-Started research internship at [Salesforce AI Research](https://www.salesforce.com/ai-research/) working with [Juan Carlos Niebles](https://www.niebles.net/)!
+Started research internship at [Salesforce AI Research](https://www.salesforce.com/ai-research/) working under [Juan Carlos Niebles](https://www.niebles.net/)!
